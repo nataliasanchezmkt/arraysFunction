@@ -6,16 +6,16 @@ Añade en última posición la ciudad de París.
 Escribe por pantalla el elemento que ocupa la segunda posición.
 Sustituye el elemento que ocupa la segunda posición por la ciudad de 'Barcelona'.
 */
-
-
-let resultado=''
+// hay q hacer un arreglo vacio y un prompt por aparte que es una let y con push en el array unificarlo
+let ciudades = [];
+ let resultado=''
 do {
-    let ciudades=prompt('Escriba una ciudad');
+    let cadena=prompt('Escriba su frase');
 if (resultado==''){
-    resultado= ciudades+resultado
-}else resultado= resultado+'-'+ciudades;
+    resultado= cadena+resultado
+}else resultado= resultado+'-'+cadena;
 
 
-}while (confirm("Desea seguir?") || ciudades!=0 )
-document.write(resultado)
-document.write(ciudades.length);
+}while (confirm("Desea seguir?"));
+ciudades.push(resultado)
+ciudades.length
