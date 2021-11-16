@@ -7,15 +7,39 @@ Escribe por pantalla el elemento que ocupa la segunda posición.
 Sustituye el elemento que ocupa la segunda posición por la ciudad de 'Barcelona'.
 */
 // hay q hacer un arreglo vacio y un prompt por aparte que es una let y con push en el array unificarlo
-let ciudades = [];
- let resultado=''
-do {
-    let cadena=prompt('Escriba su frase');
-if (resultado==''){
-    resultado= cadena+resultado
-}else resultado= resultado+'-'+cadena;
 
 
-}while (confirm("Desea seguir?"));
-ciudades.push(resultado)
-ciudades.length
+let ciudades=[]
+
+do{let city=prompt('ingrese un ciudad');
+ciudades.push(city)
+}while(confirm('Desea continuar?'))
+
+function lista (){
+for(let i=0; i<ciudades.length;i++){
+    document.write(ciudades[i]+' <br>');
+}}
+
+
+
+// 1
+
+document.write ('<br> '+ciudades.length)
+// 2
+ 
+document.write('<br> '+ciudades[0])
+document.write('<br> '+ciudades[2])
+document.write('<br> '+ciudades [ciudades.length-1])
+
+// 3
+
+ciudades.push('Paris')
+
+function lista()
+
+
+// 4
+document.write('<br>'+ciudades[1]);
+// 5
+ciudades[2]='Barcelona'
+function lista()
